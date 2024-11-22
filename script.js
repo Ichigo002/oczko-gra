@@ -35,6 +35,10 @@ $(document).ready(function () {
     function updateScore(value) {
         score += value;
         $('#score').text(score); // Aktualizacja punktów na stronie
+        if (checkForOver21()) {
+            addToTable()
+            resetGame()
+        }
     }
 
     // Funkcja usuwająca karty i resetująca punkty
