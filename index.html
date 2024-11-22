@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gra w Karty</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <h1>Gra w Karty</h1>
+
+    <div class="container">
+        <p id="game-title">Tytuł gry: Dobierz kartę!</p>
+    </div>
+
+    <div class="container">
+        <p><strong>Punkty:</strong> <span id="score">0</span></p>
+    </div>
+
+    <div class="container">
+        <button id="draw-card">Dobieram kartę</button>
+        <button id="restart-game">Restart</button>
+        <button id="view-card">Podgląd</button>
+        <div id="followDiv" style="display:none;"></div>
+    </div>
+
+    <div class="container" style="min-height: 120px;">
+        <div id="card-container" class="card-container"></div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Lp.</th>
+                <th>Data</th>
+                <th>Punkty</th>
+            </tr>
+        </thead>
+        <tbody id="score-table">
+
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

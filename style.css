@@ -1,0 +1,46 @@
+.container {
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 50px;
+    height: 70px;
+    background-color: lightgray;
+    text-align: center;
+    line-height: 70px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+#followDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    background-color: yellow;
+    padding: 5px;
+    border-radius: 5px;
+    pointer-events: none;
+    transition: transform 0.1s ease;
+}
